@@ -31,7 +31,6 @@ public class Serpientesyescaleras {
         while (salir) {
             System.out.println("\n===Menu Principal==\n"
                     + "1. Juego nuevo\n"
-                    + "2. Volver al juego\n"
                     + "3. Salir\n"
                     + "====================");
             System.out.println("ingresa la opcion");
@@ -42,16 +41,8 @@ public class Serpientesyescaleras {
                     clase.jugar();
                     sesion = true;
                     break;
+
                 case 2:
-                    if (sesion) {
-                        clase.jugar();
-                    } else {
-                        clase.rellenarArrays();
-                        clase.jugar();
-                        sesion = true;
-                    }
-                    break;
-                case 3:
                     salir = false;
                     break;
                 default:
